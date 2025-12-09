@@ -7,31 +7,45 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div>
+    <nav class="navbar">
+      <div class="navbar-logo">
         <img src="assets/logo.png" alt="Klivio Logo" />
       </div>
-      <div>
-        <a href="#">Les formations</a>
-
-        <div>
-          <input type="search" placeholder="Rechercher" />
-          <button type="submit">🔍</button>
-        </div>
-
-        <div>
-          <button>Connexion</button>
-          <button>Inscription</button>
-        </div>
+      <div class="navbar-menu">
+        <a href="#" class="navbar-link">Les formations</a>
+        <form class="search-form">
+          <input type="search" placeholder="Rechercher" class="search-input" />
+          <button type="submit" class="search-button">🔍</button>
+        </form>
       </div>
-      <button aria-label="Ouvrir le menu" type="button">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="navbar-actions">
+        <button class="btn btn-login">Connexion</button>
+        <button class="btn btn-signup">Inscription</button>
+      </div>
+      <button class="navbar-toggle" aria-label="Ouvrir le menu" type="button">
+        <svg
+          width="56"
+          height="56"
+          viewBox="0 0 56 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_0_2176)">
+            <path
+              d="M19 34V32H37V34H19ZM19 29V27H37V29H19ZM19 24V22H37V24H19Z"
+              fill="#FEF7FF"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_0_2176">
+              <rect width="56" height="56" rx="28" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
       </button>
     </nav>
 
