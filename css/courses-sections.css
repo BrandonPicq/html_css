@@ -1,0 +1,203 @@
+.courses-section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(19.0625rem, 1fr));
+  gap: 4rem;
+  align-items: start;
+  max-width: 105rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.courses-section h2 {
+  grid-column: 1 / -1;
+  margin: 0 0 2rem 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+}
+
+.courses-section .course-card {
+  display: grid;
+  grid-template-areas: "media" "content";
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: visible;
+}
+
+.courses-section .course-card .card-media {
+  grid-area: media;
+  width: 100%;
+  height: 12.875rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #44dd8a;
+  object-fit: cover;
+  display: block;
+}
+
+.courses-section .course-card .price-pill {
+  grid-area: media;
+  z-index: 2;
+  justify-self: end;
+  align-self: end;
+  margin: 0 1rem -0.9rem 0;
+  padding: 0.45rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 4rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.courses-section .course-card .price-pill span {
+  text-decoration: line-through;
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+.courses-section .course-card .card-content {
+  grid-area: content;
+  padding: 1.25rem 0.25rem 1.75rem 0.25rem;
+}
+
+.courses-section .course-card .card-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.courses-section .course-card .card-content p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.courses-section .course-card .card-content .card-rating {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.courses-section button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 2rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.popular-courses {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  background: #fff;
+}
+
+.popular-courses h2,
+.popular-courses .course-card .card-content h3,
+.popular-courses .course-card .card-content p {
+  color: #152237;
+}
+
+.popular-courses .course-card {
+  background-color: #fff;
+}
+
+.popular-courses .course-card .price-pill {
+  background-color: #152237;
+  color: #fff;
+}
+
+.popular-courses .course-card .price-pill span {
+  color: #fff;
+  opacity: 0.95;
+}
+
+.popular-courses button {
+  background-color: #152237;
+  color: #fff;
+}
+
+.popular-courses .course-card .card-content .card-rating {
+  color: #ffc700;
+}
+
+.recent-courses {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.recent-courses::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background: #152237;
+  transform: translateX(-50%);
+}
+
+.recent-courses h2,
+.recent-courses .course-card .card-content h3 {
+  color: #fff;
+}
+
+.recent-courses .course-card {
+  background-color: transparent;
+}
+
+.recent-courses .course-card .card-content p {
+  color: #e1e6ea;
+}
+
+.recent-courses .course-card .price-pill {
+  background-color: #fff;
+  color: #152237;
+}
+
+.recent-courses .course-card .price-pill span {
+  color: #152237;
+  opacity: 0.7;
+}
+
+.recent-courses .course-card .card-content .card-rating {
+  color: #ffc700;
+}
+
+.recent-courses button {
+  background-color: #fff;
+  color: #152237;
+}
+
+@media (max-width: 64rem) {
+  .courses-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .courses-section {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  .courses-section .course-card {
+    width: 85%;
+    justify-self: center;
+  }
+
+  .courses-section h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+}

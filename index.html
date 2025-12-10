@@ -11,6 +11,23 @@
     <title>Document</title>
   </head>
   <body>
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="star-full" viewBox="0 0 21 20">
+          <path
+            d="M9.56003 0.313909C9.7666 -0.104636 10.3634 -0.104636 10.57 0.313909L13.244 5.73203C13.326 5.89824 13.4846 6.01344 13.668 6.04009L19.6473 6.90893C20.1092 6.97604 20.2936 7.54367 19.9594 7.86946L15.6327 12.0869C15.5 12.2163 15.4394 12.4026 15.4708 12.5853L16.4921 18.5404C16.571 19.0004 16.0882 19.3513 15.6751 19.1341L10.3271 16.3224C10.163 16.2362 9.96702 16.2362 9.80297 16.3224L4.45496 19.1341C4.04183 19.3513 3.55898 19.0004 3.63788 18.5404L4.65926 12.5853C4.69059 12.4026 4.63003 12.2163 4.4973 12.0869L0.170675 7.86946C-0.163554 7.54367 0.0208777 6.97604 0.48277 6.90893L6.46203 6.04009C6.64544 6.01344 6.804 5.89824 6.88603 5.73203L9.56003 0.313909Z"
+            fill="currentColor"
+          />
+        </symbol>
+        <symbol id="star-empty" viewBox="0 0 21 20">
+          <path
+            d="M9.56003 0.313909C9.7666 -0.104636 10.3634 -0.104636 10.57 0.313909L13.244 5.73203C13.326 5.89824 13.4846 6.01344 13.668 6.04009L19.6473 6.90893C20.1092 6.97604 20.2936 7.54367 19.9594 7.86946L15.6327 12.0869C15.5 12.2163 15.4394 12.4026 15.4708 12.5853L16.4921 18.5404C16.571 19.0004 16.0882 19.3513 15.6751 19.1341L10.3271 16.3224C10.163 16.2362 9.96702 16.2362 9.80297 16.3224L4.45496 19.1341C4.04183 19.3513 3.55898 19.0004 3.63788 18.5404L4.65926 12.5853C4.69059 12.4026 4.63003 12.2163 4.4973 12.0869L0.170675 7.86946C-0.163554 7.54367 0.0208777 6.97604 0.48277 6.90893L6.46203 6.04009C6.64544 6.01344 6.804 5.89824 6.88603 5.73203L9.56003 0.313909Z"
+            fill="currentColor"
+            fill-opacity="0.3"
+          />
+        </symbol>
+      </svg>
+    </div>
     <nav class="navbar">
       <div class="navbar-logo">
         <img src="assets/logo.png" alt="Klivio Logo" />
@@ -56,101 +73,190 @@
         <button class="btn">En savoir plus</button>
       </div>
     </header>
-    <section>
-      <h2>Le formations populaires</h2>
+    <section class="popular-courses courses-section">
+      <h2>Les formations populaires</h2>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
           <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+          <p class="card-instructor">Sonia Lefèvre | Coach prise de parole</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+          </div>
+          <p class="card-description">
+            Gagnez en aisance et captez votre auditoire
+          </p>
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
-          <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
+          <h3>Gérer le stress</h3>
+          <p class="card-instructor">Lucie Garnier | Formatrice</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-empty"></use></svg>
+          </div>
+          <p class="card-description">
+            Apprenez à rester serein face aux défis
+          </p>
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
-          <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
+          <h3>Travailler en équipe</h3>
+          <p class="card-instructor">David Moreau | Expert</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+          </div>
+          <p class="card-description">
+            Collaborez efficacement, même à distance
+          </p>
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
-          <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
+          <h3>Gérer son temps</h3>
+          <p class="card-instructor">Claire Dumas | Coach organisation</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-empty"></use></svg>
+          </div>
+          <p class="card-description">
+            Optimisez vos journées et gagnez en efficacité
+          </p>
         </div>
       </div>
       <button>Voir plus de formations</button>
     </section>
 
-    <section>
-      <h2>Le formations populaires</h2>
+    <section class="recent-courses courses-section">
+      <h2>Les formations récentes</h2>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
           <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+          <p class="card-instructor">Sonia Lefèvre | Coach prise de parole</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+          </div>
+          <p class="card-description">
+            Gagnez en aisance et captez votre auditoire
+          </p>
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
           <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+          <p class="card-instructor">Sonia Lefèvre | Coach prise de parole</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+          </div>
+          <p class="card-description">
+            Gagnez en aisance et captez votre auditoire
+          </p>
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
           <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+          <p class="card-instructor">Sonia Lefèvre | Coach prise de parole</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+          </div>
+          <p class="card-description">
+            Gagnez en aisance et captez votre auditoire
+          </p>
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <p><strong>15,99€</strong> <span>60€</span></p>
-        <div>
+      <div class="course-card">
+        <div class="card-media"></div>
+        <p class="price-pill">
+          <strong>15,99€</strong>
+          <span>60€</span>
+        </p>
+        <div class="card-content">
           <h3>Parler en public</h3>
-          <p>Sonia Lefèvre | Coach prise de parole</p>
-          <p>*****</p>
-          <p>Gagnez en aisance et captez votre auditoire</p>
+          <p class="card-instructor">Sonia Lefèvre | Coach prise de parole</p>
+          <div class="card-rating">
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+            <svg width="21" height="20"><use href="#star-full"></use></svg>
+          </div>
+          <p class="card-description">
+            Gagnez en aisance et captez votre auditoire
+          </p>
         </div>
       </div>
+
       <button>Voir plus de formations</button>
     </section>
     <section>
@@ -235,7 +341,7 @@
     </section>
     <section>
       <h2>NOUS CONTACTER</h2>
-      <form action="">
+      <form>
         <input type="text" placeholder="Nom" />
         <input type="email" placeholder="Email" />
         <textarea placeholder="Votre message"></textarea>
@@ -259,9 +365,7 @@
           <h4>Coodrdonnées</h4>
           <ul>
             <li>& place république, 75003 Paris</li>
-            <ul>
-              01.02.03.04.05
-            </ul>
+            <li>01.02.03.04.05</li>
             <li>contact@klivio.fr</li>
           </ul>
         </div>
