@@ -28,11 +28,12 @@
 
 .banner-content h1 {
   font-size: 3rem;
-  font-weight: 900;
-  line-height: 3.6875rem;
+  font-weight: 800;
+  line-height: 0.6875rem;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .banner-content p {
@@ -41,7 +42,7 @@
   line-height: 1.5rem;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
 }
 
 @media (max-width: 768px) {
@@ -58,7 +59,8 @@
   }
 
   .banner-content h1 {
-    font-size: 225%;
+    font-size: 200%;
+    margin-top: 1.5rem;
     line-height: 2.5rem;
     margin-bottom: 0rem;
     max-width: 25rem;
@@ -68,6 +70,6 @@
     font-size: 130%;
     line-height: 1.5rem;
     max-width: 25.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 }

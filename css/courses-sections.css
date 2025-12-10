@@ -42,12 +42,13 @@
   align-self: end;
   margin: 0 1rem -0.9rem 0;
   padding: 0.45rem 1rem;
+  box-shadow: 5px 4px 13.2px -1px rgba(0, 0, 0, 0.25);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   border-radius: 4rem;
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .courses-section .course-card .price-pill span {
