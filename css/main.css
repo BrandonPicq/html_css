@@ -3,10 +3,12 @@
 @import url("courses-sections.css");
 @import url("avis.css");
 @import url("feature-section.css");
+@import url("about.css");
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   background-color: #ffffff;
   color: #152237;
+  overflow-x: hidden;
 }

@@ -1,7 +1,7 @@
 .courses-section {
   display: grid;
-  grid-template-columns: repeat(4, minmax(19.0625rem, 1fr));
-  gap: 2rem 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem 3rem;
   align-items: start;
   max-width: 90rem;
   margin: 0 auto;

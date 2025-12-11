@@ -113,3 +113,23 @@
     height: 4rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 2rem;
+    gap: 3vw;
+  }
+
+  .navbar-menu {
+    gap: 4vw;
+  }
+
+  .search-form {
+    width: 20vw;
+  }
+
+  .btn {
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+}
