@@ -19,7 +19,7 @@
 .avis-container {
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 6rem;
 }
 
 .avis-card {

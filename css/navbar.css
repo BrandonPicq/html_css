@@ -5,7 +5,7 @@
   padding: 0 7rem;
   height: 5rem;
   color: #ffffff;
-  gap: 10vw;
+  gap: 9vw;
 }
 
 .navbar-logo img {
@@ -22,7 +22,8 @@
   color: #ffffff;
   text-decoration: none;
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 300;
+  white-space: nowrap;
 }
 
 .search-form {
