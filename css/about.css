@@ -81,12 +81,12 @@
 
   .about-brand {
     flex: 1;
-    min-height: 250px;
+    min-height: 16.625rem;
     padding: 2rem 1.5rem;
   }
 
   .about-brand img {
-    max-width: 180px;
+    max-width: 13.375rem;
   }
 }
 
