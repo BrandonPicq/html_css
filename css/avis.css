@@ -1,7 +1,7 @@
 .avis {
-  max-width: 105rem;
-  margin: 0 auto;
-  padding: 3.625rem 9.375rem;
+  max-width: 100%;
+  margin: 0 auto 5rem auto;
+  padding: 3.625rem 9%;
 }
 
 .avis h2 {
@@ -13,13 +13,13 @@
   text-transform: uppercase;
   text-align: center;
   color: #152237;
-  margin: 0 0 3.25rem 0;
+  margin: 0 0 4rem 0;
 }
 
 .avis-container {
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
+  gap: 1rem;
 }
 
 .avis-card {
@@ -37,11 +37,15 @@
 .avis-name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  text-align: start;
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  line-height: 0;
   letter-spacing: -0.015em;
   color: #152237;
-  margin: 0;
+}
+
+.avis-camille {
+  max-width: 41.56rem;
 }
 
 .avis-rating {
@@ -58,19 +62,20 @@
   font-size: 1rem;
   line-height: 1.875rem;
   letter-spacing: -0.015em;
-  text-align: justify;
+  text-align: start;
   color: rgba(0, 0, 0, 0.8);
   margin: 0;
 }
 
 @media (max-width: 48rem) {
   .avis {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
+    margin: auto;
   }
 
   .avis h2 {
     font-size: 1.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   .avis-rating {
     justify-content: center;
@@ -81,14 +86,25 @@
     gap: 3rem;
   }
 
+  .avis-text {
+    text-align: start;
+  }
+
+  .avis-juliette {
+    padding-left: 1rem;
+  }
+
   .avis-card {
     max-width: 100%;
     text-align: center;
   }
 
+  .avis-name {
+    text-align: center !important;
+  }
   .avis-photo {
     width: 8.6875rem;
     height: 8.6875rem;
-    margin: 0 auto 1rem;
+    margin: 0 auto 0;
   }
 }
