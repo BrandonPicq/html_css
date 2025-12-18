@@ -39,7 +39,7 @@
   justify-self: end;
   align-self: end;
   margin: 0 1rem -0.9rem 0;
-  padding: 0.45rem 1rem;
+  padding: 0.3rem 0.75rem;
   box-shadow: 5px 4px 13.2px -1px rgba(0, 0, 0, 0.25);
   display: inline-flex;
   align-items: center;
@@ -186,7 +186,10 @@
 @media (max-width: 48rem) {
   .courses-section {
     grid-template-columns: 1fr;
-    padding: 3rem 1.5rem;
+    line-height: 0.75;
+    padding: 2rem 1.5rem;
+    max-width: 82%;
+    padding-bottom: 4rem;
   }
 
   .popular-courses {
@@ -203,5 +206,14 @@
     text-align: center;
     font-size: 1.75rem;
     line-height: 1.2;
+  }
+
+  .courses-section .course-card .card-content p {
+    line-height: 1.1;
+    font-size: 1.15rem;
+  }
+  .courses-section .course-card .price-pill {
+    margin: 0 1rem -0.9rem 0;
+    padding: 0.75rem 0.85rem;
   }
 }

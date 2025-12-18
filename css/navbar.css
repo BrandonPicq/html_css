@@ -156,6 +156,9 @@
   .btn {
     width: 100%;
   }
+  .btn-learnMore {
+    max-width: 130px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

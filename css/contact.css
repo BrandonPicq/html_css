@@ -103,7 +103,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 2rem 1rem;
+    padding: 2rem 0 2.5rem 0;
     align-items: center;
   }
 

@@ -69,12 +69,12 @@
 
 @media (max-width: 48rem) {
   .avis {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     margin: auto;
   }
 
   .avis h2 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     margin-bottom: 1.5rem;
   }
   .avis-rating {
@@ -100,7 +100,9 @@
   }
 
   .avis-name {
-    text-align: center !important;
+    text-align: center;
+    line-height: 0;
+    margin-top: 1rem;
   }
   .avis-photo {
     width: 8.6875rem;
