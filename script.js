@@ -1,6 +1,36 @@
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
 const navbarActions = document.querySelector(".navbar-actions");
+const searchInput = document.querySelector(".search-input");
+const contentElements = document.querySelectorAll(".recherchable");
+const backupData = [];
+
+contentElements.forEach(function (element) {
+  backupData.push({
+    node: element,
+    original: element.innerHTML,
+  });
+});
+
+searchInput.addEventListener("input", function () {
+  const searchText = searchInput.value;
+  let regex = null;
+
+  if (searchText.length > 0) {
+    regex = new RegExp(searchText, "gi"); //Global, Incensitif
+  }
+
+  backupData.forEach(function (data) {
+    if (searchText.length === 0) {
+      data.node.innerHTML = data.original;
+    } else {
+      const newContent = data.original.replace(regex, function (match) {
+        return `<span class="highlight">${match}</span>`;
+      });
+      data.node.innerHTML = newContent;
+    }
+  });
+});
 
 navbarToggle.addEventListener("click", function () {
   navbarMenu.classList.toggle("active");

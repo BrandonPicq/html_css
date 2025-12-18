@@ -14,3 +14,8 @@ body {
   color: #152237;
   overflow-x: hidden;
 }
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
