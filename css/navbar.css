@@ -6,6 +6,9 @@
   height: 5rem;
   color: #ffffff;
   gap: 9vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo img {
