@@ -1,7 +1,10 @@
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
 const navbarActions = document.querySelector(".navbar-actions");
-const searchInput = document.querySelector(".search-input");
+const mainSearchInput = document.querySelector(".navbar-menu .search-input");
+const mobileSearchInput = document.querySelector(
+  ".navbar-actions .search-input"
+);
 const contentElements = document.querySelectorAll(".recherchable");
 const backupData = [];
 
@@ -12,8 +15,7 @@ contentElements.forEach(function (element) {
   });
 });
 
-searchInput.addEventListener("input", function () {
-  const searchText = searchInput.value;
+function handleSearch(searchText) {
   let regex = null;
 
   if (searchText.length > 0) {
@@ -30,6 +32,14 @@ searchInput.addEventListener("input", function () {
       data.node.innerHTML = newContent;
     }
   });
+}
+
+mainSearchInput.addEventListener("input", function () {
+  handleSearch(mainSearchInput.value);
+});
+
+mobileSearchInput.addEventListener("input", function () {
+  handleSearch(mobileSearchInput.value);
 });
 
 navbarToggle.addEventListener("click", function () {

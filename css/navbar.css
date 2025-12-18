@@ -87,6 +87,9 @@
   background: linear-gradient(95.98deg, #44dd8a 8.7%, #15b7e2 100%);
   color: #152237;
 }
+.mobile-search-form {
+  display: none;
+}
 
 .navbar-toggle {
   display: none;
@@ -128,6 +131,14 @@
     display: flex;
   }
 
+  .navbar-menu .search-form {
+    display: none;
+  }
+
+  .mobile-search-form {
+    display: flex;
+    width: 100%;
+  }
   .navbar-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 2rem;
