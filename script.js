@@ -34,13 +34,17 @@ function handleSearch(searchText) {
   });
 }
 
-mainSearchInput.addEventListener("input", function () {
-  handleSearch(mainSearchInput.value);
-});
+function setupSearchListener(inputElement) {
+  const performSearch = () => {
+    handleSearch(inputElement.value);
+  };
 
-mobileSearchInput.addEventListener("input", function () {
-  handleSearch(mobileSearchInput.value);
-});
+  inputElement.addEventListener("input", performSearch);
+  inputElement.addEventListener("keyup", performSearch);
+}
+
+setupSearchListener(mainSearchInput);
+setupSearchListener(mobileSearchInput);
 
 navbarToggle.addEventListener("click", function () {
   navbarMenu.classList.toggle("active");
